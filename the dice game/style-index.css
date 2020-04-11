@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.dice{
+	position: absolute;
+	top:30%;
+	left:90%;
+	box-shadow: 0 0 3px black, 0 0 5px black;
+	height:87px;   /*I made the custom dice rols of dimentions= 87 x 87 pixels*/
+	width:87px;
+	background: url("dice4.png") no-repeat;   /*line 10 and 11 mostly play hand in hand*/
+	background-size: cover;
+}
+.player0{
+	position: relative;
+	margin-top: 10%;
+	padding-top: 51px;
+	padding-bottom: 31px;
+	float: left;
+	padding-right: 122px;
+	margin-left: 18%;
+	padding-left: 122px;
+	background-color: lightgrey;
+}
+.player1{
+	margin-top: 10%;
+	margin-right:17%;
+	padding-top: 51px;
+	padding-bottom: 31px;
+	float: left;
+	padding-right: 135px;
+	padding-left: 135px;
+	background-color: lightgrey;
+}
+.active{
+	background-color: grey;
+}
+.player0 h2, .player1 h2{
+	margin-left:45px;
+	font-family: 'Anton', sans-serif;
+}
+.player0 h1, .player1 h1{
+	margin-bottom: 10px;
+	padding: 12px;
+	color: white;
+	text-shadow: 2px 2px black;
+	background-color: darkgreen;
+	border: 3px solid black;
+	font-family: 'lobster', sans-serif;
+}
+.player0 h2, .player1 h2{
+	-webkit-text-stroke: 0.5px white;
+}
+.background{
+	width:100vw;
+	height:100vh;
+	background:url("background.jpg") no-repeat ;
+	background-size: cover;
+	overflow: visible;
+}
+.current_box0 , .current_box1{
+	margin-top: 180px;
+	margin-left: 2px;
+	padding: 0px 24px 0px 24px;
+	background-color: #4b991d;
+	color: white;
+	text-shadow: 2px 2px black;
+	box-shadow: 0 0 3px black, 0 0 5px black;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+.btn-roll{
+	border:0;						/*IMPORTANT*/
+	padding:0;						/*IMPORTANT*/
+	background-color: transparent;  /*IMPORTANT*/
+	position:absolute;
+	color: green;
+	-webkit-text-stroke: 0.5px black;   /*IMPORTANT*/
+	margin-bottom: 80px;
+	font-size: 22px;
+	top:60%;
+	left:100%;
+}
+.stop{
+	position:absolute;
+	color: green;
+	-webkit-text-stroke: 0.5px black;
+	font-size: 22px;
+	top:73%;
+	left:100%;
+}
+.btn-roll{
+	white-space: pre;   /*IMPORTANT*/
+}
+.stop img{
+	position:absolute;
+	top:-120px;
+	left: -169px;
+	transform:scale(0.2);
+}
+.btn-hold{
+	border:0;						/*IMPORTANT*/
+	padding:0;						/*IMPORTANT*/
+	background-color: transparent;  /*IMPORTANT*/
+	color: green;
+	font-size: 22px;
+}
+.roll img{
+	position:absolute;
+	top:-262px;
+	left: -78px;
+	transform:scale(0.04);
+}
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+} 
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}

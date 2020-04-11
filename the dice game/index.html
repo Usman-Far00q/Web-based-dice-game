@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pig game</title>
+	<link rel="stylesheet" type="text/css" href="style-index.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="background">
+		<div class="score_table group">
+			<div class="player0 active">
+				<div class="player0_score">
+					<h1 id="name0">player 1</h1>
+					<h2 id="player0GlobalScore">0</h2>
+				</div>
+				<div class="dice"></div>  <!-- place holder for dice picture -->
+				<div class="current_box0">
+					<h3>Current Score</h3>
+					<h4 class="player1Score">0</h4>
+				</div>
+				<div class="stop">
+					<img class="stop" src="stop.png">
+					<button class="btn-hold">Hold</button>
+				</div>
+				<div class="roll">
+					<img src="refresh.png">
+					<button class="btn-roll">roll dice</button>
+				</div>
+			</div>
+			<div class="player1">
+				<div class="player1_score">
+					<h1 id="name1">player 2</h1>
+					<h2 id="player1GlobalScore">0</h2>
+				</div>
+				<div class="current_box1">
+					<h3>Current Score</h3>
+					<h4 class="player2Score">0</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
